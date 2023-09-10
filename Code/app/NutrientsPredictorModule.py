@@ -5,7 +5,7 @@ import numpy as np
 warnings.filterwarnings('ignore')
 
 # Load models
-model_p = joblib.load('models/rf_P-v1.pkl')
+model_p = joblib.load('models/lgbm_P-v1.pkl')
 model_k = joblib.load('models/rf_K-v1.pkl')
 model_n = joblib.load('models/rf_N-v1.pkl')
 
