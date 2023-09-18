@@ -2,12 +2,14 @@ import warnings
 import joblib
 import pandas as pd
 import numpy as np
+import hickle as hkl
 warnings.filterwarnings('ignore')
 
+
 # Load models
-model_p = joblib.load('models/lgbm_P-v1.pkl')
-model_k = joblib.load('models/rf_K-v1.pkl')
-model_n = joblib.load('models/rf_N-v1.pkl')
+model_p = hkl.load('models/lgbm_P-v1.hkl')
+model_k = hkl.load('models/rf_K-v1.hkl')
+model_n = hkl.load('models/rf_N-v1.hkl')
 
 mapping = pd.read_csv("data/mapped_crops.csv")
 mapping = dict(zip(mapping['Crops'], mapping['Key']))
