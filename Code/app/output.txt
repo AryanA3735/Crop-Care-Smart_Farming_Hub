@@ -1,0 +1,6 @@
+Message
+Precipitation Forecast
+Rainfall forecast for the next 2 days (including today) is 2.69 mm with a 32% chance.
+97.32
+21.55
+19.04
