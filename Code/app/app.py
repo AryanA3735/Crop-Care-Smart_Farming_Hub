@@ -12,7 +12,7 @@ def processing():
         print("The URL /processing is accessed directly.")
         return url_for('index.html')
 
-    # POST requestf
+    # POST request
     if request.method == "POST":
         form_data = request.form
         call_success = []
